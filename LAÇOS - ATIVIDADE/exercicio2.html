@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            /*Faça um programa que seja capaz de calcular de forma correta o IMC de um número indefinido de pessoas.  Ou seja, o usuário decide quando para de calcular os IMCs. Para cada calculo deve ser informado a altura(m) da pessoa e o seu peso(kg).*/
+            do{
+                altura=prompt("Qual é sua altura? ")
+                peso=prompt("Qual seu peso? ")
+                
+                altura=parseFloat(altura)
+                peso=parseFloat(peso)
+                let imc=peso/(altura*altura)
+                    console.log("seu imc é de ",imc)
+                if(imc<18.4){
+                    console.log("Magreza grau I")
+                }
+                else if(imc > 18.5 && imc <= 24.9){
+                    console.log("Adequado")
+                }
+                else if(imc > 25.0 && imc <= 29.9){
+                    console.log("Pré-obeso")
+                }
+                else if(imc >30.0 && imc <= 34.9){
+                    console.log("Obesidade grau I")
+                }
+            }while(confirm("Continuar"));
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            /*1) Faça um programa que receba do usuário dois números inteiros.
+            Posteriormente percorra o intervalo destes números e liste todos os números primos encontrados.*/
+            let primeiroNumero=prompt("Digite o primeiro número"," ")
+            let segundoNumero=prompt("Digite o segundo número", " ")
+            
+            for(n=primeiroNumero; n<=segundoNumero; n++){
+                let p=0;
+                for(i=2;i<n;i++){
+                    if(n%i==0){
+                        p++;
+                        break;
+                    }
+                }
+            
+                if(p==0){
+                    console.log(n)
+                }
+          
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
